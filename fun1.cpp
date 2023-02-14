@@ -30,3 +30,10 @@ void itc_ra(vector <int>& mass){
 void itc_pb(const vector <int>& mass, vector <int>& mass2) {
 				mass2.push_back(mass[0]);
 }
+
+void itc_per(vector <int>& mass, vector <int>& mass2) {
+	for (int i = 1; i < mass.size();i++) {
+		mass2.push_back(mass[i]);
+	}
+	mass = mass2;
+}

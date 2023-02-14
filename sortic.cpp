@@ -9,12 +9,10 @@ using namespace std;
 
 int main() {
 	int min = 0;
-	vector <int> a = { 1, 4, 7, 9,-2, 79,-100};
+	vector <int> a = { 1, 4, 7, 9,-2, 79,-100 };
 	vector <int> b = {};
 	vector <int> c = {};
-	//for (int q = 0; q < a.size(); q++) {
-		//b[q] = itc_min(a);
-	//}
+	for () {
 	min = itc_min(a);
 	while (a[0] != min) {
 		itc_ra(a);
@@ -23,7 +21,12 @@ int main() {
 	for (int i = 0; i < b.size(); i++) {
 		cout << b[i] << " ";
 	}
-	
+	itc_per(a, c);
+}
+
+		for (int j = 0; j < a.size(); j++) {
+			cout << endl << a[j] << " ";
+		}
 	return 0;
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
