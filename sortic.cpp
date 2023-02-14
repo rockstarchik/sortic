@@ -8,13 +8,21 @@
 using namespace std;
 
 int main() {
-
-	vector <int> mass_a = { 1, 4, 7, 9 };
-	vector <int> mass_b = {};
-	//for (int i = 0; i < mass_a.size(); i++) {
-
+	int min = 0;
+	vector <int> a = { 1, 4, 7, 9,-2, 79,-100};
+	vector <int> b = {};
+	vector <int> c = {};
+	//for (int q = 0; q < a.size(); q++) {
+		//b[q] = itc_min(a);
 	//}
-	cout << itc_min(mass_a);
+	min = itc_min(a);
+	while (a[0] != min) {
+		itc_ra(a);
+	}
+	itc_pb(a, b);
+	for (int i = 0; i < b.size(); i++) {
+		cout << b[i] << " ";
+	}
 	
 	return 0;
 }
