@@ -28,10 +28,5 @@ void itc_ra(vector <int>& mass){
 }
 
 void itc_pb(const vector <int>& mass, vector <int>& mass2) {
-	if (0 == mass.size()) {
-
-	}
-	else
-		for (int i = 0; i < mass.size(); i++)
 				mass2.push_back(mass[0]);
 }
