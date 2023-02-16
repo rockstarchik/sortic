@@ -37,3 +37,9 @@ void itc_per(vector <int>& mass, vector <int>& mass2) {
 	}
 	mass = mass2;
 }
+
+void itc_strmass(vector <int>& mass, string str) {
+	for (int i = 0; str[i] != '!'; i++) {
+		mass.push_back(str[i]);
+	}
+ }

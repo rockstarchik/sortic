@@ -3,26 +3,29 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 #include "fun.h"
 
 using namespace std;
 
 int main() {
 	int min = 0;
-	vector <int> a = { 1, 4, 7, 9,-2, 79,-100 };
+	string r;
+	cin >> r;
+	vector <int> a = {};
 	vector <int> b = {};
 	vector <int> c = {};
-	for () {
-	min = itc_min(a);
-	while (a[0] != min) {
-		itc_ra(a);
-	}
-	itc_pb(a, b);
-	for (int i = 0; i < b.size(); i++) {
-		cout << b[i] << " ";
-	}
-	itc_per(a, c);
-}
+	itc_strmass(a, r);
+
+	//min = itc_min(a);
+	//while (a[0] != min) {
+	//	itc_ra(a);
+	//}
+	//itc_pb(a, b);
+	//for (int i = 0; i < b.size(); i++) {
+	//	cout << b[i] << " ";
+	//}
+	//itc_per(a, c);
 
 		for (int j = 0; j < a.size(); j++) {
 			cout << endl << a[j] << " ";
