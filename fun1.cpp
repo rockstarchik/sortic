@@ -39,7 +39,10 @@ void itc_per(vector <int>& mass, vector <int>& mass2) {
 }
 
 void itc_strmass(vector <int>& mass, string str) {
-	for (int i = 0; str[i] != '!'; i++) {
-		mass.push_back(str[i]);
-	}
+	int ch = 0;
+	int k;
+	for(int i = 0;str[i] != '/0';i++)
+	k = ;
+	ch = ch * 10 + k;
  }
+

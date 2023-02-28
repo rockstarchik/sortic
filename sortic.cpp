@@ -8,14 +8,22 @@
 
 using namespace std;
 
+
+
+
 int main() {
 	int min = 0;
 	string r;
 	cin >> r;
+	while (r != "!")
+	{
+		itc_strmass(a, r);
+		cin >> r;
+	}
 	vector <int> a = {};
 	vector <int> b = {};
 	vector <int> c = {};
-	itc_strmass(a, r);
+	
 
 	//min = itc_min(a);
 	//while (a[0] != min) {
