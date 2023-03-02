@@ -13,28 +13,39 @@ using namespace std;
 
 int main() {
 	int min = 0;
-	string r;
-	cin >> r;
-	while (r != "!")
-	{
-		itc_strmass(a, r);
-		cin >> r;
-	}
+	int ch;
+	string r = " ";
 	vector <int> a = {};
 	vector <int> b = {};
 	vector <int> c = {};
+	int len = a.size();
+	for(int d = 0;r != "!"; d++)
+	{
+		cin >> r;
+		if (r != "!") {
+			ch = itc_strint(r);
+		}
+		else
+			;
+		a.push_back(ch);
+
+	}
 	
+	for (int q = 0; q < a.size(); q++) {
+		for (int i = 0;b.size() <= len; i++) {
+			while (a[0] != itc_min(a)) {
+				itc_ra(a);
+				cout << "ra" << endl;
+			}
+			itc_pb(a, b);
+			cout << "pb" << endl;
 
-	//min = itc_min(a);
-	//while (a[0] != min) {
-	//	itc_ra(a);
-	//}
-	//itc_pb(a, b);
-	//for (int i = 0; i < b.size(); i++) {
-	//	cout << b[i] << " ";
-	//}
-	//itc_per(a, c);
-
+			//for (int i = 0; i < b.size(); i++) {
+				//cout << b[i] << " ";
+			//}
+			itc_per(a, c);
+		}
+	}
 		for (int j = 0; j < a.size(); j++) {
 			cout << endl << a[j] << " ";
 		}

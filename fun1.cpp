@@ -38,11 +38,12 @@ void itc_per(vector <int>& mass, vector <int>& mass2) {
 	mass = mass2;
 }
 
-void itc_strmass(vector <int>& mass, string str) {
+int itc_strint(string a) {
+	int k = 1;
 	int ch = 0;
-	int k;
-	for(int i = 0;str[i] != '/0';i++)
-	k = ;
-	ch = ch * 10 + k;
- }
-
+	for (int i = 0; i < a.size(); i++) {
+	 ch = (a[a.size() - 1 - i] - '0') * k + ch;
+		k = k * 10;
+	}
+	return ch;
+}
