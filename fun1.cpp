@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+
 int itc_min(const vector <int>& mass) {
 	int min, i;
 	min = mass[0];

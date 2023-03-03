@@ -8,11 +8,14 @@
 
 using namespace std;
 
-
+ void itc_vec(const vector <int>& mass) {
+	for (int p = 0; p < mass.size(); p++) {
+		cout << endl << mass[p] << " ";
+	}
+}
 
 
 int main() {
-	int min = 0;
 	int ch;
 	string r = " ";
 	vector <int> a = {};
@@ -31,25 +34,27 @@ int main() {
 
 	}
 	
-	for (int q = 0; q < a.size(); q++) {
-		for (int i = 0;b.size() <= len; i++) {
-			while (a[0] != itc_min(a)) {
+	for (int q = 0; q <= len; q++) {
+		for (int e = 0; a[0] != itc_min(a); e++) {
 				itc_ra(a);
 				cout << "ra" << endl;
 			}
 			itc_pb(a, b);
 			cout << "pb" << endl;
-
-			//for (int i = 0; i < b.size(); i++) {
-				//cout << b[i] << " ";
-			//}
+			c = {};
 			itc_per(a, c);
-		}
+
+
+
+			cout << "vector a";
+			itc_vec(a);
 	}
-		for (int j = 0; j < a.size(); j++) {
-			cout << endl << a[j] << " ";
-		}
+	cout << endl << "vector b";
+	itc_vec(b);
+		
 	return 0;
+
+
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
