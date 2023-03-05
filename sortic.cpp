@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <windows.h> 
 #include "fun.h"
 
 using namespace std;
@@ -21,7 +22,7 @@ int main() {
 	vector <int> a = {};
 	vector <int> b = {};
 	vector <int> c = {};
-	int len = a.size();
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	for(int d = 0;r != "!"; d++)
 	{
 		cin >> r;
@@ -33,28 +34,31 @@ int main() {
 		a.push_back(ch);
 
 	}
-	
-	for (int q = 0; q <= len; q++) {
+	a.pop_back();
+	int len = a.size();
+	for (int u = 0; u < len ; u++) {
 		for (int e = 0; a[0] != itc_min(a); e++) {
 				itc_ra(a);
+				SetConsoleTextAttribute(hConsole, 5);
 				cout << "ra" << endl;
 			}
 			itc_pb(a, b);
-			cout << "pb" << endl;
+			SetConsoleTextAttribute(hConsole, 2);
+			cout  << "pb" << endl;
 			c = {};
 			itc_per(a, c);
-
-
-
-			cout << "vector a";
-			itc_vec(a);
 	}
-	cout << endl << "vector b";
-	itc_vec(b);
-		
+	int len1 = b.size();
+	for (int i = 0; i < len1; i++) {
+		itc_pa(b, a);
+			SetConsoleTextAttribute(hConsole, 11);
+			cout << "pa" << endl;
+	}
+
+	SetConsoleTextAttribute(hConsole, 7);
+	cout << "vector a";
+	itc_vec(a);
 	return 0;
-
-
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
