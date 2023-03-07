@@ -5,6 +5,7 @@
 #include <vector>
 #include <string>
 #include <windows.h> 
+#include <fstream>
 #include "fun.h"
 
 using namespace std;
@@ -34,30 +35,36 @@ int main() {
 		a.push_back(ch);
 
 	}
-	a.pop_back();
+	ofstream res;
+	res.open("111.txt");
+	itc_ra(a);
+	itc_per(a,c);
 	int len = a.size();
 	for (int u = 0; u < len ; u++) {
 		for (int e = 0; a[0] != itc_min(a); e++) {
 				itc_ra(a);
 				SetConsoleTextAttribute(hConsole, 5);
-				cout << "ra" << endl;
+				res << "ra" << endl;
 			}
 			itc_pb(a, b);
 			SetConsoleTextAttribute(hConsole, 2);
-			cout  << "pb" << endl;
+			res  << "pb" << endl;
 			c = {};
 			itc_per(a, c);
 	}
 	int len1 = b.size();
 	for (int i = 0; i < len1; i++) {
+		c = {};
 		itc_pa(b, a);
+		itc_per(b, c);
+
 			SetConsoleTextAttribute(hConsole, 11);
-			cout << "pa" << endl;
+			res << "pa" << endl;
 	}
 
-	SetConsoleTextAttribute(hConsole, 7);
-	cout << "vector a";
-	itc_vec(a);
+	//SetConsoleTextAttribute(hConsole, 7);
+	//cout << "vector a";
+	//itc_vec(a);
 	return 0;
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
